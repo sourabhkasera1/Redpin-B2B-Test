@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants access to Technical Scoping field(s) for Integrated B2B user(s)</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Technical_Scoping_Complete__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Redpin Integrated B2B Technical Scoping</label>
+</PermissionSet>

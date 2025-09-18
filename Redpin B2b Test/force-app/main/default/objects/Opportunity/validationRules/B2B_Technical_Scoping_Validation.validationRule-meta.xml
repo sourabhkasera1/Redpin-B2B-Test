@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Technical_Scoping_Validation</fullName>
+    <active>true</active>
+    <description>RB-12 - Prevents Integrated B2B Opportunities from being moved to Proposal, Onboarding or Won Stages when the Technical Scoping has not been completed.</description>
+    <errorConditionFormula>AND(
+  RecordType.DeveloperName = &quot;Integrated_B2B&quot;,
+  OR(
+    ISPICKVAL(StageName, &quot;Proposal &amp; Negotiation&quot;),
+    ISPICKVAL(StageName, &quot;Onboarding &amp; Implementation&quot;),
+    ISPICKVAL(StageName, &quot;Closed Won&quot;)
+  ),
+  NOT(Technical_Scoping_Complete__c)
+)</errorConditionFormula>
+    <errorDisplayField>Technical_Scoping_Complete__c</errorDisplayField>
+    <errorMessage>Technical Scoping &amp; Proposal Sent Date must be completed before Opportunity can be moved to “Proposal &amp; Negotiation” or later stage.</errorMessage>
+</ValidationRule>
