@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integrated_B2B</fullName>
+    <active>true</active>
+    <description>Redpin Integrated B2B</description>
+    <label>Integrated B2B</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Affiliate_Sector__c</picklist>
+        <values>
+            <fullName>Emigration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Accounting %26 Book-Keeping Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aeronautical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airline Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alcohol and Tobacco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amusement Parks %26 Arcades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Animal Welfare Organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antique Dealers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archaeologists</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architectural Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arms%2C weapons or munitions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art and Antiques</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Astrologers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automobiles %26 Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aviation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking%2C insurance and regulated financial services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banqueting Rooms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barristers%2FLawyer%2FSolicitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bathroom Planners %26 Furnishers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bookmakers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Books</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builders%2FBuilding Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business suport Services and outsourcing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call centres%2FOutsourcing units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannabis%2C CBD and%2For Hemp Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cars</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charity and not for profit organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals%2C detergents and man made substances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cinemas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clothing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction%2C building maintenance%2C engineering and demolition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultancies and firms with intangible products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultants - Business %26 Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultants - Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deceased Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doctors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics%2C telecommunications and photographic equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estate Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event Management %26 entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farming and Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Institutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Florists</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freight and logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture and home wares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gambling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gardening equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glass manufacturing or products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hire Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality%2C hotels and restaurants%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel%2CHospitality %26 Leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Importers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individuals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial equiment%2C machinery%2C tools and plant%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interior Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jewellery%2C precious stones and minierals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacture - Furniture %26 Home appliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacture of Rubber%2C plastic or synthetic materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacture of clothing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturer - Booksellers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Clothing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Confectionery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Cosmetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Electronics %26 Computer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Filteration Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Food Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Glass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Handbag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Jewellery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Metal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Misc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Paints %26 Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Plastic %26 Rubber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Stationary %26 Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Stone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Textile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Tyre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Wheel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Wines Spirits %26 Beer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturers - Wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing - Music %26 Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical%2C science and care services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medicines%2C legal drugs and other licenced pharmaceuticals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metal fabrications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metals and commodities traders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining and Natural resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Money Transfers Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Musical Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newsagents</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payroll Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmaceuticals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power%2COil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing and Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Processing or refinement of natural resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Services%2C lawyers%2C accountants and ancillary services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Administration and affairs of state%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Transport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publishing and Print</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quantity Surveyors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Railways</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religious Organisations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Booksellers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Clothing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Confectionery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Cosmetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Electronics %26 Computer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Filteration Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Food Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Furniture %26 Home appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Glass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Handbag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - IT %26 Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Jewellery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Logistics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Media %26 Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Metal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Misc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Paints %26 Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Plastic %26 Rubber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Stationary %26 Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Stone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Supermarkets %26 Cash n Carry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Textile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Tyre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Wheel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Wines Spirits %26 Beer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail - Wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rugs %26 carpet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales%2C rental and development of properties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrap merchants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Managed Super Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping %26 Freight Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sporting Goods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stone manufacturing or subsidiary products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surveyors %26 Valuers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Television%2C Media%2C Movies%2C Music and entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Textiles%2C non clothing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Arts%2C culture and sporting clubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tools and building products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tourism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tourism - Travel Agents%2C Tour Operators%2C Guides%2C visitor Centres%2C Attractions and Vacation firms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Translation services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel %26 Tourism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Universities%2FColleges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unlicensed Financial Services Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicles%2C automobiles%2C locomotion and transport machines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Merchants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste management%2C recycling and disposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Booksellers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Car</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Clothing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Confectionery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Cosmetic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Electronics %26 Computer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Filteration Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Food Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Footwear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Furniture %26 Home appliances</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Games</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Glass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Handbag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Jewellery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Metal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Misc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Paints %26 Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Plastic %26 Rubber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Sports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Stationary %26 Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Stone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Textile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Toys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Tyre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Wheel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Wines Spirits %26 Beer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler - Wood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesalers - Cash %26 Carry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholeseller - Artwork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yacht%2FYacht Brokerage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Source__c</picklist>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Sourced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>CFX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 1 - Individual Affiliate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 2 - Branch Affiliate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 3 - Country Affiliate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 4 - Global Affiliate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cdcrmCustomer_Sub_Type__c</picklist>
+        <values>
+            <fullName>Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indirect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

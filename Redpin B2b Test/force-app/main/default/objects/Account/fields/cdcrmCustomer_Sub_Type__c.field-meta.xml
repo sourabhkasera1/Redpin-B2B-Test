@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cdcrmCustomer_Sub_Type__c</fullName>
+    <description>Prospect or Customer?</description>
+    <label>Customer Sub Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PBU</fullName>
+                <default>false</default>
+                <label>PBU</label>
+            </value>
+            <value>
+                <fullName>FPS</fullName>
+                <default>false</default>
+                <label>FPS</label>
+            </value>
+            <value>
+                <fullName>FPS - Non Top 500</fullName>
+                <default>false</default>
+                <label>FPS - Non Top 500</label>
+            </value>
+            <value>
+                <fullName>Real Estate Agent</fullName>
+                <default>false</default>
+                <label>Real Estate Agent</label>
+            </value>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>Indirect</fullName>
+                <default>false</default>
+                <label>Indirect</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
