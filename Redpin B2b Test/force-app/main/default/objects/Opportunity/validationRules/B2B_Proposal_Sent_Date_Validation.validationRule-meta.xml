@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Proposal_Sent_Date_Validation</fullName>
+    <active>true</active>
+    <description>RB-12 - Proposal Sent Date must be completed before Opportunity can be moved to “Proposal &amp; Negotiation” or later stage for Integrated B2B Opportunities.</description>
+    <errorConditionFormula>AND(
+    /* Only trigger for Integrated B2B opportunities */
+    RecordType.DeveloperName = &quot;Integrated_B2B&quot;,
+
+    /* Stage must be one of the restricted values */
+    ISPICKVAL(StageName, &quot;Proposal &amp; Negotiation&quot;) ||
+    ISPICKVAL(StageName, &quot;Implementation/Onboarding&quot;) ||
+    ISPICKVAL(StageName, &quot;Closed Won&quot;),
+
+    /* Proposal Sent Date is blank */
+    ISBLANK(Proposal_Sent_Date__c)
+)</errorConditionFormula>
+    <errorDisplayField>Proposal_Sent_Date__c</errorDisplayField>
+    <errorMessage>Proposal Sent Date &amp; Technical Scoping Complete must be set before Opportunity can be moved to “Proposal &amp; Negotiation” or later stage.</errorMessage>
+</ValidationRule>
