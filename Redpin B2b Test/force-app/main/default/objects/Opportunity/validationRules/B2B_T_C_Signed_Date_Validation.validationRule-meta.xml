@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_T_C_Signed_Date_Validation</fullName>
+    <active>true</active>
+    <description>RB-12 - Prevents Integrated B2B Opportunities from being moved to Won Stage when the T&amp;C Signed Date has not been populated.</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &quot;Integrated_B2B&quot;,
+    ISPICKVAL(StageName, &quot;Closed Won&quot;),
+    ISBLANK(T_C_Signed_Date__c)
+)</errorConditionFormula>
+    <errorDisplayField>T_C_Signed_Date__c</errorDisplayField>
+    <errorMessage>T&amp;C Signed Date must be entered before Opportunity can be moved to the &quot;Won&quot; stage.</errorMessage>
+</ValidationRule>
